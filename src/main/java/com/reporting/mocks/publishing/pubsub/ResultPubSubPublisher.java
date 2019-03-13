@@ -29,8 +29,10 @@ public class ResultPubSubPublisher implements IResultPublisher {
     protected MarketEnvPubSubPublisher marketEnvPubSubPublisher;
     protected IResultPublisherConfiguration resultPublisherConfiguration;
 
-    public ResultPubSubPublisher(IResultPublisherConfiguration resultPublisherConfiguration) {
-        PubsubConfig appConfig = new PubsubConfig();
+    public ResultPubSubPublisher(IResultPublisherConfiguration resultPublisherConfiguration, PubsubConfig appConfig) {
+//        PubsubConfig appConfig = new PubsubConfig();
+
+        System.out.println(appConfig.getProjectId());
         this.resultPublisherConfiguration = resultPublisherConfiguration;
         this.riskResultSetProducer = new RiskResultSetPubSubProducer(resultPublisherConfiguration, appConfig);
         this.riskResultProducer = new RiskResultPubSubProducer(resultPublisherConfiguration, appConfig);
