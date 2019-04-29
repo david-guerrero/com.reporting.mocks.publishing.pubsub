@@ -57,12 +57,12 @@
 		<dependency>
 			<groupId>com.reporting.mocks</groupId>
 			<artifactId>model</artifactId>
-			<version>0.7.0</version>
+			<version>0.8.2</version>
 		</dependency>
 		<dependency>
 			<groupId>com.reporting.mocks</groupId>
 			<artifactId>interfaces</artifactId>
-			<version>0.4.0</version>
+			<version>0.5.1</version>
 		</dependency>
 	</dependencies>
 
